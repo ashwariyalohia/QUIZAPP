@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "563084436765",
+    "firebase_url": "https://game-d94b2.firebaseio.com",
+    "project_id": "game-d94b2",
+    "storage_bucket": "game-d94b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563084436765:android:52303b10ba8cf5fb",
+        "android_client_info": {
+          "package_name": "com.example.ashra.logo_guessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563084436765-ib6gpeann9shmf5sqnbdvitv3qep1qku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRU6BiC03MSwtdYiBvNY0TbDOs2rz0ju0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
