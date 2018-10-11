@@ -26,6 +26,7 @@ public class enterhome extends AppCompatActivity {
 
                 Intent play_intent= new Intent(enterhome.this,entry.class);
                 startActivity(play_intent);
+                finish();
             }
         });
 

@@ -33,13 +33,15 @@ public class entry extends AppCompatActivity {
                 {
 
                     String id = databaseUsers.push().getKey();
-                        Toast.makeText(getApplicationContext(), id, Toast.LENGTH_LONG).show();
                     User user = new User(id, enter_name.getText().toString(), 0);
                     databaseUsers.child(id).setValue(user);
                     Intent startintent = new Intent(entry.this,levels_activity.class);//use intent to switch a page using class page name
-
-                    startintent.putExtra("name", enter_name.getText().toString()); //to show a data on other page
+                    Bundle data = new Bundle();
+                    data.putString("userId", user.getId());
+                    data.putString("name", enter_name.getText().toString());
+                    startintent.putExtras(data); //to show a data on other page
                     startActivity(startintent);
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(), "name cannot be blank", Toast.LENGTH_SHORT).show();
                 }

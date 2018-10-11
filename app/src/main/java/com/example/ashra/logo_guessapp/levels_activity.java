@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class levels_activity extends AppCompatActivity {
 
@@ -24,6 +25,9 @@ public class levels_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent easyintent=new Intent(levels_activity.this,level_easy_activity.class);
+                easyintent.putExtras(getIntent().getExtras());
+                String userId = getIntent().getExtras().getString("userId");
+                Toast.makeText(getApplicationContext(), userId, Toast.LENGTH_SHORT).show();
                 startActivity(easyintent);
             }
         });
